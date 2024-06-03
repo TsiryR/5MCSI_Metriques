@@ -20,7 +20,7 @@
       legend: { position: 'none' }
     };
    var chart = new google.visualization.Histogram(document.getElementById('chart_div'));
-        chart.draw(datatable, options);
+        chart.draw(dataTable, options);
   }
   // Récupération de données depuis notre API /tawarano/
   fetch('/tawarano/')

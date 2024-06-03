@@ -25,8 +25,8 @@
       curveType: 'function',
       legend: { position: 'bottom' }
     };
-     var chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
-      chart.draw(data, option);
+     var chart = new google.visualization.Histogram(document.getElementById('chart_div'));
+        chart.draw(datatable, options);
   }
   // Récupération de données depuis notre API /tawarano/
   fetch('/tawarano/')
